@@ -1,0 +1,36 @@
+---
+---
+@import "variables";
+
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+@import "pygments/solarized_dark";
+
+body {
+  padding-top: 3rem;
+}
+
+a, a:hover, a:active, a:visited a:link {
+  text-decoration: none;
+}
+
+.nav-card{
+  @extend .col-md-2;
+
+  .link {
+    @extend .list-group-item;
+  }
+
+  .link-active {
+    @extend .list-group-item;
+    @extend .active;
+  }
+}
+
+.main-content {
+  @extend .col-md-10;
+}
+
+.highlight {
+  @extend code;
+}
