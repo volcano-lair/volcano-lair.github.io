@@ -1,20 +1,15 @@
 ---
 layout: default
-title: Home
-
+title: ''
 permalink: /
-icon: home
-order: 1
 ---
 {% include links.md %}
 
-# {{ site.name }}
-
-**Spectre is a federated platform composed of discrete, interoperable services.**
+#### Spectre is a federated platform composed of discrete, interoperable services.
 
 The objective of the Spectre project is to provide a secure, distributed, scalable platform upon which to build distributed services in a flexible, inexpensive, language-agnostic fashion.
 
-**Spectre is not a server.**
+#### Spectre is not a server.
 
 The Spectre project is a collection of services that solve common problems associated with scaling and securing distributed, ephemeral infrastructure (e.g. hosted compute, e.g. The Cloud™). Thus, one can not "deploy Spectre". The services and their respective code-bases that reside under the umbrella of the Spectre project should be referred to be their specific names whenever possible to avoid mischaracterization.
 

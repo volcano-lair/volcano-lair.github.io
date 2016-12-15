@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Night Watch
-
-icon: server
+repo: 'rapid7/night-watch'
 ---
 {% include links.md %}
-# {{ page.title }}

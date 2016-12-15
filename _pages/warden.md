@@ -1,9 +1,6 @@
 ---
 layout: default
 title: Warden
-
-icon: server
+repo: 'rapid7/warden'
 ---
 {% include links.md %}
-
-# {{ page.title }}

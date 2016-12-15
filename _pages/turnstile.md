@@ -1,9 +1,6 @@
 ---
 layout: default
 title: Turnstile
-
-icon: server
+repo: 'rapid7/turnstile'
 ---
 {% include links.md %}
-
-# {{ page.title }}

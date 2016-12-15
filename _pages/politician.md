@@ -1,9 +1,6 @@
 ---
 layout: default
 title: Politician
-
-icon: server
+repo: 'volcano-lair/politician'
 ---
 {% include links.md %}
-
-# {{ page.title }}

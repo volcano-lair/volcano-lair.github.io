@@ -3,7 +3,6 @@ layout: default
 title: Consul
 ---
 {% include links.md %}
-# {{ page.title }}
 
 Consul is an open-source [Hashicorp project](https://consul.io). It implements a distributed gossip network, synchronous RPC channels, and consistent RAFT storage between agents deployed to all instances, and a central cluster of servers in a datacenter.
 

@@ -1,9 +1,6 @@
 ---
 layout: default
 title: Tokend
-
-icon: server
+repo: 'rapid7/tokend'
 ---
 {% include links.md %}
-
-# {{ page.title }}

@@ -1,9 +1,7 @@
 ---
 layout: default
 title: Vault
-
-icon: server
 ---
 {% include links.md %}
 
-# {{ page.title }}
+Vault is an open-source [Hashicorp project](https://www.vaultproject.io/).
