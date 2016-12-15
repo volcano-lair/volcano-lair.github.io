@@ -1,0 +1,35 @@
+---
+- title: Home
+  icon: home
+  page: /index.html
+- title: Configuration
+  icon: sliders
+  services:
+    - title: Propsd
+      page: /pages/propsd.html
+    - title: Night Watch
+      page: /pages/night-watch.html
+- title: Discovery
+  icon: cogs
+  services:
+    - title: Consul
+      page: /pages/consul.html
+- title: Key Management
+  icon: key
+  services:
+    - title: Vault
+      page: /pages/vault.html
+    - title: Warden
+      page: /pages/warden.html
+    - title: Tokend
+      page: /pages/tokend.html
+- title: Identity and Access Management
+  icon: shield
+  services:
+    - title: Notary
+      page: /pages/notary.html
+    - title: Politician
+      page: /pages/politician.html
+    - title: Turnstile
+      page: /pages/turnstile.html
+---

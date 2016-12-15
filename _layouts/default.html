@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>{{ site.name }} - {{ page.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | prepend: site.baseurl }}">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="nav-card">
+        <div class="card">
+          {% for group in site.data.menu %}
+          <a class="link{% if page.title == group.title %}-active{% endif %}" href="{% if group contains 'page' %}{{ group.page | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ group.title }}">
+            <i class="fa fa-lg fa-{{ group.icon }}"></i>
+            <strong>&nbsp;{{ group.title | truncate: 22 }}</strong>
+          </a>
+          {% for service in group.services %}
+          <a class="link{% if page.title == service.title %}-active{% endif %}" href="{% if service contains 'page' %}{{ service.page | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ service.title }}">
+            <i class="fa fa-minus"></i>
+            <span>&nbsp;{{ service.title | truncate: 24 }}</span>
+          </a>
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="main-content">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
