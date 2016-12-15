@@ -12,22 +12,50 @@
 </head>
 
 <body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-1">{{ site.name }}</h1>
+      <h3 class="display-4">{{ page.title }}</h3>
+    </div>
+  </div>
   <div class="container-fluid">
     <div class="row">
       <div class="nav-card">
         <div class="card">
-          {% for group in site.data.menu %}
-          <a class="link{% if page.title == group.title %}-active{% endif %}" href="{% if group contains 'page' %}{{ group.page | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ group.title }}">
+          <div class="list-group list-group-flush">
+            <a class="link{% if page.url == '/' %}-active{% endif %}" href="/" title="Home">
+              <i class="fa fa-lg fa-home"></i>
+              <strong>&nbsp;Home</strong>
+            </a>
+          </div>
+        </div>
+        {% for group in site.data.menu %}
+        <div class="card">
+          <div class="card-header" title="{{ group.title }}">
             <i class="fa fa-lg fa-{{ group.icon }}"></i>
             <strong>&nbsp;{{ group.title | truncate: 22 }}</strong>
-          </a>
-          {% for service in group.services %}
-          <a class="link{% if page.title == service.title %}-active{% endif %}" href="{% if service contains 'page' %}{{ service.page | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ service.title }}">
-            <i class="fa fa-minus"></i>
-            <span>&nbsp;{{ service.title | truncate: 24 }}</span>
-          </a>
-          {% endfor %}
-          {% endfor %}
+          </div>
+          <div class="list-group list-group-flush">
+            {% for service in group.services %}
+            <a class="link{% if page.title == service.title %}-active{% endif %}" href="{% if service contains 'page' %}{{ service.page | prepend: site.baseurl }}{% else %}#{% endif %}" title="{{ service.title }}">
+              <i class="fa fa-minus"></i>
+              <span>&nbsp;{{ service.title | truncate: 24 }}</span>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        <div class="card">
+          <div class="list-group list-group-flush">
+            <a class="link" href="https://github.com/volcano-lair" target="_blank" title="GitHub">
+              <i class="fa fa-lg fa-github"></i>
+              <span>&nbsp;Github</span>
+            </a>
+            <a class="link{% if page.title == 'Credits' %}-active{% endif %}" href="/{{ 'pages/credits.html' prepend: site.baseurl }}" title="Credits">
+              <i class="fa fa-lg fa-copyright"></i>
+              <span>&nbsp;Credits</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="main-content">

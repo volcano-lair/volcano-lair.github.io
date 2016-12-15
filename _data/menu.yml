@@ -1,7 +1,4 @@
 ---
-- title: Home
-  icon: home
-  page: /index.html
 - title: Configuration
   icon: sliders
   services:
