@@ -6,7 +6,6 @@ project:
   repo: spectre
 
 url: https://volcano-lair.github.io
-baseurl: /
 
 markdown: kramdown
 
