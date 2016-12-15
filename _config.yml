@@ -1,0 +1,23 @@
+name: Spectre
+description:
+
+project:
+  owner: rapid7
+  repo: spectre
+
+url: https://rapid7.github.io/spectre
+baseurl: /spectre
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+collections:
+  pages:
+    output: true
+
+gems:
+  - jemoji
