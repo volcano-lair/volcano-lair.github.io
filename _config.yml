@@ -5,8 +5,8 @@ project:
   owner: rapid7
   repo: spectre
 
-url: https://rapid7.github.io/spectre
-baseurl: /spectre
+url: https://volcano-lair.github.io
+baseurl: /
 
 markdown: kramdown
 
